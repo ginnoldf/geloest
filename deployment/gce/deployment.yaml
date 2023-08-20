@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geloest
+  namespace: geloest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: geloest
+  template:
+    metadata:
+      labels:
+        app: geloest
+    spec:
+      containers:
+      - name: app
+        image: us-west2-docker.pkg.dev/telimektar/repo/geloest:alpha
+        ports:
+        - containerPort: 80
+        # stay cheap
+        resources:
+          limits:
+            cpu: 250m
+            ephemeral-storage: 100M
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            ephemeral-storage: 100M
+            memory: 512Mi

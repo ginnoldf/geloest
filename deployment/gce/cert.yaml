@@ -1,0 +1,8 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: geloest
+  namespace: geloest
+spec:
+  domains:
+    - geloest.ginnold.berlin

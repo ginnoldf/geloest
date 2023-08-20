@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    background-image: url("lights.jpg");
+    font-family: 'Rubik', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}

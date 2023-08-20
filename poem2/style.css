@@ -1,0 +1,14 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.poem {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
